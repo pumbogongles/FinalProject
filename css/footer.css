@@ -1,0 +1,30 @@
+.imageIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:8px;
+}
+
+.container-fluid{
+    background-color: rgb(8, 70, 8);
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+}
+
+.stayConnectedHeading{
+
+    margin-top: 6px;    
+    text-decoration: underline;
+}
+
+.subscribe{
+    display: flex;
+}
+
+.mailingListDesc{
+    font-size: 12px;
+    padding-top: 4px;
+}
