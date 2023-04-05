@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    Width:100%;
+
+}
+
+.container-lg {
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+    background-color: whitesmoke;
+    text-align: center;
+   
+}
+
+.card1 {
+    display:flex;
+    flex-wrap:wrap;
+    margin: 300px;
+
+}
+
+img {
+    width: 50%;
+    margin: 20px auto;
+    align-items: center;
+
+}
