@@ -16,7 +16,8 @@
 
 </head>
 <body>
-  <div class="mt-5">
+  <div id="navbar"></div>
+  <div class="mt-1">
     <h3>Merchant Control Panel</h3>
     <!--Create your form here-->
     <div class="container">
@@ -36,19 +37,19 @@
           />
         </div>
 
-        <label for="productPrice">Product Price*</label>
-        <div class="input-group mb-4">
-          <span class="input-group-text">$</span>
-          <input type="number"
-          min="0.00"
-          step="0.01"
-          class="form-control"
-          value="0"
-          id="productPrice"
-          aria-describedby="nameHelp"
-          placeholder="Enter name"
-          required aria-label="Amount (to the nearest dollar)">
-          <span class="input-group-text">.00</span>
+        <div class="mb-4">
+          <label for="productPrice">Product Price*</label>
+          <input
+            type="number"
+            min="0.00"
+            step="0.01"
+            class="form-control"
+            value="0.00"
+            id="productPrice"
+            aria-describedby="nameHelp"
+            placeholder="Enter name"
+            required
+          />
         </div>
 
      
@@ -112,6 +113,7 @@
     <script>
       $(document).ready(function()
       {
+        $("#navbar").load("common/navbar.html");
           $( "#footer" ).load( "common/footer.html" );
       });
   </script>
