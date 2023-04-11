@@ -23,20 +23,42 @@
     <div class="container">
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              
       <form class="mt-4">
-        
+
         <div class="mb-4">
-          <label for="productName">Product Name*</label>
-          <input
-            type="text"
-            class="form-control"
-            id="productName"
-            aria-describedby="nameHelp"
-            placeholder="Enter name"
-            required
-          />
+          <label for="productType">Product Type*</label>
+          <select class="form-control" id="productType" required>
+            <option value="">Please Select</option>
+            <option value="Tote Bag">Tote Bag</option>
+            <option value="Backpack Bag">Backpack Bag</option>
+            <option value="Briefcase Bag">Briefcase Bag</option>
+            <option value="Camera Bag">Camera Bag</option>
+          </select>
         </div>
 
+        <div class="mb-4">
+          <label for="productName">Product Name*</label>
+          <input type="text" class="form-control" id="productName" aria-describedby="nameHelp" placeholder="Enter Product name" required>
+      </div>
+
+      <div class="mb-4">
+        <label for="productDescription" class="form-label">Product Description*</label>
+        <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter Product Description"
+        required></textarea>
+      </div>
+
+      <div class="mb-4">
+        <label for="color">Color*</label>
+        <select class="form-control" id="color" required>
+          <option value="">Please Select</option>
+          <option value="Red">Red</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+        </select>
+      </div>
+        
         <div class="mb-4">
           <label for="productPrice">Product Price*</label>
           <input
@@ -46,50 +68,18 @@
             class="form-control"
             value="0.00"
             id="productPrice"
-            aria-describedby="nameHelp"
+            aria-describedby="priceHelp"
             placeholder="Enter name"
             required
           />
         </div>
 
-     
-
-          <div class="mb-4">
-            <label for="productDescription" class="form-label">Product Description*</label>
-            <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter Product Description"
-            required></textarea>
-          </div>
-
-          <div class="mb-4">
-            <label for="color">Color*</label>
-            <select class="form-control" id="color" required>
-              <option value="">Please Select</option>
-              <option value="Red">Red</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-              <option value="Green">Green</option>
-            </select>
-          </div>
-
-          <div class="mb-4">
-            <label for="size">Size*</label>
-            <select class="form-control" id="size" required>
-              <option value="">Please Select</option>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-            </select>
-          </div>
-
+        <label for="productPrice">Image URL*</label>
           <div class="input-group mb-3">
-            <input type="file" class="form-control" id="inputGroupFile02">
-            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            <input type="file" class="form-control" id="imageURL">
+            <label class="input-group-text" for="imageURL">Upload</label>
           </div>
-          <div>
-          <img src="images/Dalle2/Product range/_00b84e4c-f9e8-42e4-b4e1-2b39a0d9ee2a.jpg" width="400px" height="400px" class="img-thumbnail" alt="productPicture">
-        </div>
+          
         <button class="btn btn-primary mb-4" type="submit">
           Add Product
         </button>
@@ -99,6 +89,7 @@
         </div>
     </div>
   </div>
+
     <div id="footer"></div>
 
     <script
