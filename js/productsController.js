@@ -66,6 +66,8 @@ const cameraBag1 = {
 const productArray = [];
 
 productArray.push(tote1, tote2, backpack1, briefcase1, briefcase2, briefcase3, cameraBag1)
+
+
 function displayProduct() {
     let display = "";
     for (let i = 0; i< productArray.length; i++) {
@@ -79,5 +81,55 @@ function displayProduct() {
     }
     document.querySelector(".populate").innerHTML = display;
 }
-window.onload = displayProduct()
+console.log(productArray);
+//displayProduct();
+
+function addProductForm(){
+    const productType = document.querySelector('#productType').value;
+    const productName = document.querySelector('#productName').value;
+    const productDescription = document.querySelector('#productDescription').value;
+    const color = document.querySelector('#color').value;
+    const productPrice = document.querySelector('#productPrice').value;
+    const imageURL = "test";
+
+    addProduct(productType,productName,productDescription,color,productPrice,imageURL);
+
+    /*
+    const ProductItem = {
+        type: productType,
+        name: productName,
+        desc: productDescription,
+        color: color,
+        price: productPrice,
+        imageURL: imageURL
+    }
+
+    productArray.push(ProductItem);
+    */
+   
+
+}
+
+
+
+
+function addProduct(t, n, d, c, p, i){
+
+    //The parameters will be sent in from another function through the arguments
+    //1) Construct/Create the object
+    //   property: value
+    const ProductItem = {
+        type: t,
+        name: n,
+        desc: d,
+        color: c,
+        price: p,
+        imageURL: i
+    }
+
+    productArray.push(ProductItem);
+
+    console.log(productArray);
+   // displayProduct();
+}
 
