@@ -58,7 +58,8 @@
 .collage {
     flex-direction: column;
     width:50%;
-    border: 2px solid red;
+    padding:20px;
+
 }
 
 .container-lg {
