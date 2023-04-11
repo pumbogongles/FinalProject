@@ -1,1 +1,10 @@
 .container{width: 500px};
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-tiem > img {justify-content: center;
+text-align: center;
+display: flex;}

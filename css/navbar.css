@@ -3,12 +3,13 @@
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: center;
-    
+    text-align: center
 };
 
-.navbar-link{padding-bottom: 500px;} /*Does not work*/
+.navbar{justify-items: center} /*Does not work*/
 
+.navbar-brand img{width: 70px;
+margin-right: 0px;}
 
 
 
