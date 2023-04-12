@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+.backgroundColor{
     background-color: palegoldenrod;
     font-family: Helvetica, sans-serif;
 }
