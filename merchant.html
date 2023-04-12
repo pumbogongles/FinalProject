@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               
-      <form class="mt-4">
+      <form class="mt-4" onsubmit="event.preventDefault();">
 
         <div class="mb-4">
           <label for="productType">Product Type*</label>
@@ -74,13 +74,13 @@
           />
         </div>
 
-        <label for="productPrice">Image URL*</label>
+        <label for="imageURL">Image URL*</label>
           <div class="input-group mb-3">
             <input type="file" class="form-control" id="imageURL">
             <label class="input-group-text" for="imageURL">Upload</label>
           </div>
-          
-        <button class="btn btn-primary mb-4" type="submit">
+
+        <button class="btn btn-primary mb-4" onclick="addProductForm()">
           Add Product
         </button>
             </div>
@@ -98,7 +98,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-    <script src="productsController.js"></script>
+    <script src="js/productsController.js"></script>
     <script src="js/index.js"></script>
 
 
@@ -113,3 +113,4 @@
   </script>
 </body>
 </html>
+
