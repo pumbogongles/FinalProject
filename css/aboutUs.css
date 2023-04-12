@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 .toprow {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +16,7 @@
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    padding:20px;
+    padding: 20px;
     align-items: stretch;
     min-width: 200px;
     width: 30%;
@@ -25,14 +24,13 @@
     background-color: palegoldenrod;
     justify-content: center;
     text-align: center;
-
 }
 
 .ourCommitment {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    padding:20px;
+    padding: 20px;
     align-items: stretch;
     min-width: 200px;
     width: 30%;
@@ -45,7 +43,7 @@
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    padding:20px;
+    padding: 20px;
     align-items: stretch;
     min-width: 200px;
     width: 30%;
@@ -54,64 +52,114 @@
     text-align: center;
 }
 
-
-.collage {
-    flex-direction: column;
-    width:50%;
-    padding:20px;
-
-}
-
-.container-lg {
-    text-align: center;
-
-}
-
-.founders {
-    color:black; 
-    text-align: center;
-    margin-top:30px;padding:100px;
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: palegoldenrod;
 }
 
-.cardcontainer {
-    width: 50%;
+.image-container img{
+    width:30%;
+}
+
+@media screen and (max-width: 767px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
     
+    .image-container img {
+      width: 100%;
+    }
+  }
+
+.container-lg {
+    text-align: center;
+}
+
+.banner1 {
+    color: whitesmoke;
+    text-align:center;
+    margin-top: 30px;
+    padding: 50px;
+    background-image:url("../images/Dalle2/background/bgd18.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.banner2 {
+    color:#4c2929a6;
+    text-align:center;
+    margin-top: 30px;
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd18.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner3 {
+    color: green;
+    text-align:center;
+    margin-top: 30px;
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner4 {
+    color:rgb(98, 98, 144);
+    text-align: center;
+    margin-top: 30px;
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd11.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner5 {
+    color:black;
+    text-align:center;
+    margin-top: 30px;
+    padding: 50px;
+    background-image:url("../images/Dalle2/background/bgd18.jpg");
+    background-size: cover;
+    background-position: center;
+
+.cardcontainer: {
+    width: 50%;
 }
 
 .card-body {
+    justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: palegoldenrod;
 }
 
 img {
-
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
     margin: 20px auto;
     align-items: center;
-
 }
-
 
 .card-title {
     font-size: 30px;
+    text-align: center;
 }
 
 .card-text {
     font-size: 30px;
 }
 
-
 .container text-center {
     background-color: blanchedalmond;
-
 }
 
 .Linkedin {
     font-size: 40px;
-    justify-content: center;
+    
     position: absolute;
     bottom: 10px;
-
 }
