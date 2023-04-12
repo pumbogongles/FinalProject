@@ -8,7 +8,7 @@
 
 .navbar{justify-items: center} /*Does not work*/
 
-.navbar-brand img{width: 70px;
+.navbar-nav img{width: 40px;
 margin-right: 0px;}
 
 
