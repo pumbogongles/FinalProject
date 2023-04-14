@@ -76,6 +76,8 @@ function displayProduct() {
         <a href="#">
             <img src=${productArray[i].imageURL}>
             <p>${productArray[i].name}</p>
+            <a id="item${i+1}" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onClick="displayDetails(${i})">More</a>
+
         </a>
     </div>`
     }
@@ -133,3 +135,12 @@ function addProduct(t, n, d, c, p, i){
    // displayProduct();
 }
 
+function displayDetails(index) {
+    //When user clicks on any "More" button, the details of the selected product will be displayed
+     document.querySelector("#modalName").innerHTML =  productArray[index].name;
+     document.querySelector("#modalType").innerHTML =  productArray[index].type;
+     document.querySelector("#modalPrice").innerHTML =  productArray[index].price;
+     document.querySelector("#modalColor").innerHTML =  productArray[index].color;
+     document.querySelector("#modalDesc").innerHTML =  productArray[index].desc;
+     document.querySelector("#modalImg").src =  productArray[index].imageURL;
+ }
