@@ -1,0 +1,151 @@
+* {
+
+    box-sizing: border-box;
+}
+
+.toprow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    background-color: palegoldenrod;
+}
+
+.aboutUs,
+.ourCommitment,
+.ourQuality {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px;
+    align-items: stretch;
+    min-width: 200px;
+    width: 30%;
+    height: 60%;
+    background-color: palegoldenrod;
+    justify-content: center;
+    text-align: center;
+}
+
+.textbox1 {
+    margin-top: 10px;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: palegoldenrod;
+    background-image:url("../images/Dalle2/background/bgd18.jpg");
+  
+
+}
+
+.image-container img{
+    width:30%;
+}
+
+@media screen and (max-width: 767px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .image-container img {
+      width: 100%;
+    }
+  }
+
+.container-lg {
+    text-align: center;
+}
+
+.banner1 {
+    color: #212529;
+    text-align:center;
+   
+    padding: 50px;
+    background-image:url("../images/Dalle2/background/bgd18.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.banner2 {
+    color:#212529;
+    text-align:center;
+
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd18.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.banner3 {
+    color: green;
+    text-align:center;
+
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd3.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.banner4 {
+    color:#212529;
+    text-align: center;
+    margin-top: 30px auto;
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd11.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner5 {
+    color:#212529;
+    text-align:center;
+
+    padding: 250px;
+    background-image:url("../images/Dalle2/background/bgd4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cardcontainer {
+    width: 30%;
+}
+
+.card {
+    align-items: center;
+}
+.card-body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: palegoldenrod;
+}
+
+.cardcontainer>img {
+    width: 40%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: 2px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.container text-center {
+    background-color: blanchedalmond;
+}
+
+.Linkedin {
+    font-size: 40px;   
+    position: absolute;
+    bottom: 10px;
+}
